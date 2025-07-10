@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Toni Tiilikainen">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/styles.css">
+    </head>
+
+    <body>
+        <div id="pageWrapperColumn">
+            
+            <div class="tab">
+                <!--Tabs for CV, Portfolio, About me, etc.-->
+                <button class="tablinks">
+                    <h3 style="color:lightgray">CV</h3>
+                </button>
+                <button class="tablinks" onclick="history.back()">
+                    <h3>Back to Portfolio</h3>
+                </button>
+                <button class="tablinks">
+                    <h3 style="color:lightgray">Contact info</h3>
+                </button>
+
+            </div>
+
+            <div id="CV">
+                <div class="mainInfo">
+                    <h1>Norowareta</h1>
+
+                    <h2>1. Project Description</h2>
+                    <p><a href="https://store.steampowered.com/app/2964800/Norowareta_The_Three_Treasures/">Steam link to the game</a>.</p>
+                    <p>Norowareta is a horror first person game. Even though the team is relatively large, it's still a student project and no one has worked on this full time.</p>
+                    <p>I jumped into this project in August of 2022 during its pre-alpha phase as one of two programmers. After a few months I was given the position of lead level designer. In 2024 I took a backstep from the project as I was focusing more on my studies.</p>
+                    <p><b>Team and Roles:</b></p>
+                    <p>Jenna Toivonen - producer, 3d artist, level editor</p>
+                    <p>Christopher Solis - creative director, 3d animator, level editor</p>
+                    <p>Mauri Rahkila - art director, concept artist</p>
+                    <p>Antti Keinänen - 3d environment artist</p>
+                    <p>Suvi Kanerva - 3d artist</p>
+                    <p>Toni Tiilikainen - programmer, level designer</p>
+                    <p>Ida Rask - programmer, level editor</p>
+                    <p>Ufuk Özden - game writer</p>
+                    <p>Noora Horatov - narrative designer</p>
+                    <p>Miriam Lucenius - concept artist, storyboard artist</p>
+                    <p>Alise Hirvonen - cutscene and UI artist</p>
+                    <p>Elina Vättö - cutscene artist</p>
+                    <p>Henri Brandt - sound designer</p>
+                    <p><b>Design:</b> "Norowareta: The Three Treasures" is a low-res single-player survival horror game set in Japan in the Edo period. Players will take the role of a tourist in Japan who finds themselves in a bizarre situation as they got dragged into the past and woke up in a dark-lit shrine where they need to solve puzzles and fight monsters on their way to escape the nightmare they are in.</p>
+                    <p>That's the marketing spiel. I don't think I have much to add to that as a programmer.</p>
+                    <p><b>Achieved:</b> As a team completed a playable alpha version of the game by December 14th 2022. In 2024 the game got a playable demo.</p>
+                    <p><b>Schedule:</b> Current objective is to launch somewhere in 2025.</p>
+
+
+                    <h2>2. Completed Tasks</h2>
+                    <p>I'm only listing things I had some significant hand in creating.</p>
+                    <p><b>Puzzle design:</b> I have desgined almost all the puzzles in the game. These include a sliding puzzle, sequence puzzle, timer puzzle, and doll puzzle. I have also designed most of the gameplay "puzzles" while designing the levels.</p>
+                    <p><b>Level design:</b> I did majority of the early level designs. However, the maps were built by the 3d artists based on my designs and further adjusted based on later testing.</p>
+                    <p><b>Enemy design:</b> This was not specifically my task, however I was in the design meetings and many of my suggestions worked themselves in.</p>
+                    <p><b>Boss design:</b> I was on the team that designed all the boss mechanics and their environs.</p>
+                    <p><b>Narrative design:</b> I was there in several of the narrative meetings. However, my input/requests were primarily focused on technical implementation and level design.</p>
+                    
+                    <p><b>Ghost enemy:</b> This was primarily Ida's assignment, but I helped in the early stages. Where I left the ghost was still unfinished and buggy in many ways. I would now build this using HFSM rather than pure logic, which we used since neither of us had any experience with AI programming.</p>
+                    <p><b>Inventory:</b> The inventory and all its functionality was built by me. I had no say on the art side, but I gave some input on the UI layout design. The UI was rather simple to build. The interconnectiveness of different game systems with the inventory was the hardest part for me, and I learned a lot about how to make some game systems more modular when struggling with this.</p>
+                    <p><b>Journal:</b> I built the Journal functionality and the UI logic. The more complex early design was changed to accommodate a less complex purpose that to my knowledge is still in the game (I programmed this change as well).</p>
+                    <p><b>Archive:</b> Archive stores notes collected by the player and allows them to be viewed from here. When I programmed this I ran into problems with the game systems created earlier by someone else, which we never got around fixing - I learned a better way of doing this as I was planning a replacement system that we never implemented.</p>
+                    <p><b>Notes updated:</b> The old notes were clunky and didn't allow multiple pages or proper interaction. I fixed all that by creating a completely new notes system, which also allowed each page background art to be changed individually.</p>
+                    <p><b>Puzzle implementation:</b> I programmed a modular sliding puzzle. I made the puzzle modular to future proof the design, allowing the puzzle to be built in any shape and size with some obvious limitations (to my knowledge this modularity isn't going to be used anywhere though :C). Looking back, this puzzle could have been done much better and with less if-else jungle. The sequence and timer puzzle functionality I programmed but was not there for the final implementation.</p>
+                    <p><b>Interactions updated:</b> The original code was built very inefficiently. I updated it to use an IInteractable interface and a more effecient raycasting.</p>
+                    <p><b>Save system:</b> I built the save system apart from the scene transition triggers. The save system saves the inventory, journal, archive, player position, item states, and allows scene transitions. This was far less complex than I had anticipated and worked without any major issues or troubleshooting.</p>
+                    <p><b>Character controller:</b> The original character controller was the standard Unity version, but early on it proved to have limitation that warranted a complete rework. I implemented some custom physics for the player, dynamic footsteps (based on both surface and feet movement).</p>
+                    <p><b>Inventory items:</b> I believe this was one of my first ever scriptable objects. Simple, but worth noting for the historic moment.</p>
+                    <p><b>Scene template:</b> to ease creation of new scenes. I believe this was almost necessary with all the different interacting systems as setting up a new scene had become untenable.</p>
+                    <p><b>Weapon:</b> I reprogrammed how the weapon worked to make it more efficient and to interact with inventory items and player inputs.</p>
+                    <p><b>Health system:</b> I reprogrammed the mechanics attached to the player health and death as the older system was largely unfinished.</p>
+
+                    <h2>3. Problems and Solutions</h2>
+                    <p><b>Previous code:</b> The initial code for the game was made by designers with very little to no programming experience. This obviously would make future development more difficult, and as a team we decided to redo/modify/fix large portions of the old code. In the future, I have resolved to make sure the foundation of the game systems is well-designed to ease problems later on.</p>
+                    <p><b>Previous code uncommented:</b> Not only was the old code error-prone, it also lacked comments and was poorly organized. This led to a lot of headache before we managed to decipher what was happening where and where to find what. I am now commenting things far more to help people further down the pipeline.</p>
+                    <p><b>Navmesh teleporting:</b> At one point the ghost enemy teleported from place to place. The issue has mostly been fixed though and might not resurface once we redo many of the ghost interactions.</p>
+                    <p><b>Github weirdness:</b> I can't really pinpoint the cause of the problems as they haven't really happened on my side. However, some in team had problems early on and I've helped resolve them the best I can (when I've been around obviously).</p>
+                    <p><b>Large codebase:</b> This obviously happens in all larger projects. One imperfect solution is to have the codebase be better organized.</p>
+                    <p><b>New Unity version:</b> The art team needed us to move to a newer version of Unity. This caused an unexpected issue with version control, but the solution was found after communicating about the problem with the team.</p>
+
+
+                    <h2>4. Testing</h2>
+                    <p>Outside public testing we've mostly had ad hoc testing. I don't know about anyone else, but I've at least tried to make sure my code survives most user interactions.</p>
+                    
+
+                    <h2>5. Screenshots</h2>
+                    <p><b>Picture 1.</b> An obsolete version of living quarters, which I designed. The map has since gone over updates and a slight rework. NDA, so no more of these before launch.</p>
+                    <p><img src="../IMG/Norowareta/Area map.jpg" class="pics"></p>
+                    <p><b>Picture 2.</b> Inventory in an earlier state as seen in the Unity editor.</p>
+                    <p><img src="../IMG/Norowareta/Inventory.jpg" class="pics"></p>
+                    <p><b>Picture 3.</b> The base for the notes as seen without text in Unity editor with default sprites.</p>
+                    <p><img src="../IMG/Norowareta/NoteBase.jpg" class="pics"></p>
+
+
+                    <h2>6. Videos</h2>
+                    <p>The alpha trailer from before I became part of the project:</p>
+                    <iframe width=95% height="400px" src="https://www.youtube.com/embed/WXkqLqQw0O4"></iframe>
+                    <p><a href="https://youtu.be/WXkqLqQw0O4">Direct link</a></p>
+                    <p>The sliding puzzle I programmed early on in the project:</p>
+                    <iframe width=95% height="400px" src="https://www.youtube.com/embed/6mzxZOaSuO8"></iframe>
+                    <p><a href="https://youtu.be/6mzxZOaSuO8">Direct link</a></p>
+                    
+
+                    <h2>7. Conclusions</h2>
+                    <p>I had a lot of fun with this project as well as with the team. All of this has also been very educational on many fronts, including on how much easier everything gets when you have skillful producer and design team.</p>
+                    <br><br>
+                </div>
+            </div>
+            
+
+            <div id="footerData">
+                <!--Whatever useless extra info is at the bottom of a website.-->
+            </div>
+
+        </div>
+
+    </body>
+</html>

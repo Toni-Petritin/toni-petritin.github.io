@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Toni Tiilikainen">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/styles.css">
+    </head>
+
+    <body>
+        <div id="pageWrapperColumn">
+            
+            <div class="tab">
+                <!--Tabs for CV, Portfolio, About me, etc.-->
+                <button class="tablinks">
+                    <h3 style="color:lightgray">CV</h3>
+                </button>
+                <button class="tablinks" onclick="history.back()">
+                    <h3>Back to Portfolio</h3>
+                </button>
+                <button class="tablinks">
+                    <h3 style="color:lightgray">Contact info</h3>
+                </button>
+
+            </div>
+
+            <div id="CV">
+                <div class="mainInfo">
+                    <h1>Woods of the Dark Arts</h1>
+
+                    <h2>1. Project Description</h2>
+                    <p>This started out as a remaster for a largish game company but it turned into our own roguelite game project after the plans for a remaster was cancelled. The whole team is comprised of students.</p>
+                    <p>I was the project lead throughout the first year or so of the roguelite development and assistant team lead during the earlier remaster phase. In addition, I was a programmer and designer throughout both project timelines.</p>
+
+                    <p><b>Client:</b> Xamp Game Studios</p>
+                    <p><b>Team and Roles:</b></p>
+                    <p>Toni Tiilikainen - project lead/producer, "senior" programmer, lead designer</p>
+                    <p>Joni Helén - lead programmer</p>
+                    <p>Luna Berger - art lead</p>
+                    <p>Nero Nikolaev - programmer</p>
+                    <p>Knosta Karttunen - programmer</p>
+                    <p>Essi Kykkänen - UI artist & design</p>
+                    <p>Ding Yifan - artist</p>
+                    <p>Saku Nurmiranta - audio design and implementation</p>
+                    <p>And half a dozen others with so far very limited input in the project.</p>
+
+                    <p><b>Design:</b> The design process was largely a group effort.</p>
+                    <p><b>Achieved:</b> A functioning demo with many mechanics programmed in that doesn't have art to implement yet.</p>
+                    <p><b>Future:</b> The project will likely continue without me as I allow a new project lead to take my place. The exact direction depends on whoever replaces me, but current focus is in implementing the HUB area.</p>
+                    <p><b>Schedule:</b> The early development was in a daily format. A transition to weekly format happened as school started for everyone three months after XGS greenlit the roguelite.</p>
+
+
+                    <h2>2. My Tasks</h2>
+                    <p><b>Project lead/producer:</b> Scheduling, making decisions, recruitment, helping everyone be on the same page/communication, and helping everyone understand their tasks.</p>
+                    <p><b>Giving opportunities:</b> I kept it as priority throughout the project to allow people to learn new things and use the project to further their studies in ways I found feasible.</p>
+                    <p><b>Project management:</b> I learned how to use Jira and Confluence for the use of management. Neither was a completely optimal tool, but I did see the value in using them.</p>
+
+                    <p><b>Reviewing code:</b> We set up pull requests on git. I helped review code, comment, and approve the PRs.</p>
+                    <p><b>Design:</b> For the longest time all design decisions went through me or were made by me.</p>
+                    <p><b>Architecture design:</b> I used a significant amount of time creating UML diagrams and documentation with the lead programmer. This allowed the rest of the programming team to create some of the systems in the way we needed them and understand how the different game core systems could be interfaced with.</p>
+                    <p><b>Technical art design:</b> Using 2d art in a truly 3d environment proved to need a lot of interesting art design and programming architecture choices.</p>
+
+                    <p><b>Player character:</b> I programmed all the player functionality other than the stat mechanics.</p>
+                    <p><b>Camera movement:</b> I made a short script to make the camera Lerp softly between the mouse and the player character. It apparently turned out rather pleasant.</p>
+                    <p><b>Input system:</b> I created the input system with Unity's "new" input system.</p>
+                    <p><b>Game manager:</b> I programmed the core class that oversee the state of the game. I used a singleton class that initializes itself before any Awake or OnEnabled is triggered by Unity.</p>
+                    <p><b>Prototype physics:</b> The prototype had custom physics to allow for some interactions to function easier. Some of these were later added in to function with the player character alongside Unity's own physics.</p>
+                    <p><b>Prototype AI pathfinding:</b> I programmed custom pathfinding early on. Though it was functional, I decided to go with Unity's NavMesh for the later iterations of the AI.</p>
+                    <p><b>Prototype AI:</b> This was a simple FSM AI. Nothing really to say. Basic melee and ranged enemy.</p>
+                    <p><b>AI:</b> I programmed a base for a somewhat modular behavior tree that could be used to create all the AIs of the game. The AI has some ability to communicate with other nearby AIs. Otherwise somewhat simple AI again.</p>
+                    <p><b>Behavior tree visual tools:</b> I programmed editor tools to be used in creating new BTs.</p>
+                    <p><b>Blackboard system:</b> I programmed a blackboard that used hashtables and custom dictionaries. However, I decided it was overly complex to use for a task I intended others to be able to modify later on.</p>
+                    <p><b>Utility system:</b> I programmed a simple utility system to allow for the enemy AI to exhibit some low level adaptation. I ended up scrapping it as it didn't serve the game's design in the end.</p>
+
+                    <h2>3. Problems and Solutions</h2>
+                    <p><b>Varied motivation in the team:</b> I don't believe I am good enough of a leader to get people interested in doing something, if they themselves can't. Having discussions about motivation doesn't really seem to lead to more motivation. The largest problem was the non-existent effort of the early art and art recruitment people. A lot of problems arose from this that could probably have been avoided if I had taken a harsher stand earlier and started recruitment by myself.</p>
+                    <p><b>Communication:</b> Leading a team of about a dozen people is taxing for me. I don't think I want to do this unless it is the only thing I'd be doing in the project.</p>
+                    <p><b>Inbalance in team composition:</b> First 3-4 months of development happened virtually without artists and there is still no dedicated designer. This was a problem with recruitment effort initially and later student motivation to jump into projects was likewise problematic. In the "real world", this would have been solved by simply hiring new people and firing those who refuse to work. As it stands, students do what they want with the motivation they have.</p>
+                    <p><b>Overly complex programming architecture:</b> I recognized this as a problem fairly early on, but failed to address it mainly because I saw the solution as more design work. The design work we simpy had no one to do on the skill level needed.</p>
+                    <p><b>Skill level disparity:</b> The complex programming structures built by the more experienced programmers couldn't be used by the less experienced ones. We attempted to solve this by creating UML diagrams of the game's main systems, but this only partially solved the issue. Another solution was to pair the less experienced programmers with the more experienced ones occasionally - this seemed to create better results but the overall problem remained.</p>
+                    <p><b>School priorities:</b> This wasn't merely a scheduling problem and I am very much at fault here myself. The behavior trees I used for the AI were overly complex for what I needed. I knew this deep down when I began creating the system, however I wanted to write my thesis on this complex hybrid AI system. The solution to this is to prioritize the game over your own curiosity.</p>
+
+
+                    <h2>4. Testing</h2>
+                    <p>We started out with a dedicated tester. However, I noticed early on that this was a person who would likely never get the testing done (for personal reasons or otherwise). For this reason I allowed this student to use the project to learn about testing but never relied on them producing results.</p>
+                    <!--Should include bug reports and testing documents, if those are available.-->
+
+
+                    <h2>5. Screenshots</h2>
+                    <p><b>Picture 1.</b> A screenshot of the demo with player inventory open.</p>
+                    <p><img src="../IMG/WoDA/Inventory open.png" class="pics"></p> <!--This is an example link-->
+                    
+
+                    <h2>6. Demo Gameplay Video</h2>
+                    <p><!--Video description, if necessary--></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xnSB7tRNYv4?si=mlvT7GxCBnj5y56y"></iframe>
+                    <p><a href="https://youtu.be/xnSB7tRNYv4">Direct link</a></p> <!--Example link to video-->
+
+
+                    <h2>7. Conclusions</h2>
+                    <p>I think this was a great learning experience if nothing else. I learned a lot about leading a team, several differnet kinds of pitfalls you can fall into with regards to people as well as design and scheduling. I also learned a lot about my own limits in terms of how much I have energy to perform extremely varied tasks for a perlonged period of time.</p>
+                    <br><br>
+                </div>
+            </div>
+            
+
+            <div id="footerData">
+                <!--Whatever useless extra info is at the bottom of a website.-->
+            </div>
+
+        </div>
+
+    </body>
+</html>
