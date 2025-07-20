@@ -12,21 +12,23 @@
         <div id="pageWrapperColumn">
             <div class="tab">
                 <!--Tabs for CV, Portfolio, About me, etc.-->
-                <button class="tablinks" onclick="openTab(event, 'CV')" id="defaultOpen">
-                    <h3>CV</h3>
-                </button>
-                <button class="tablinks" onclick="openTab(event, 'Portfolio')">
+                <button class="tablinks" onclick="openTab(event, 'Portfolio')" id="defaultOpen">
                     <h3>Portfolio</h3>
                 </button>
                 <button class="tablinks" onclick="openTab(event, 'Contact')">
                     <h3>Contact info</h3>
                 </button>
-
+                <button class="tablinks" onclick="openTab(event, 'AboutMe')">
+                    <h3>More About Me</h3>
+                </button>
+                <button class="tablinks" onclick="openTab(event, 'Resume')">
+                    <h3>Resume</h3>
+                </button>
             </div>
 
-            <div id="CV" class="tabcontent">
+            <div id="AboutMe" class="tabcontent">
                 <div class="mainInfo">
-                    <!--The actual content of CV and such.-->
+                    <!--Stuff about me and such.-->
                     <p><img src="IMG/Pesari&Me.jpg" id="pesari"></p>
 
                     <h2>Who</h2>
@@ -114,31 +116,46 @@
             <div id="Portfolio" class="tabcontent">
                 <div class="mainInfo">
 
+                    <h1>Toni Tiilikainen</h1>
+                    <h2>A game programmer specializing in behavioral AI and mathematics. Focusing on optimized and easy-to-maintain code makes me happy.</h2>
+
+                    <br>
+
                     <h1>Video Games</h1>
-                    <p>Here is a short list of games and game related projects I've made or been part of making. The detailed list omits many school projects as they were mainly built with tutorials and only minor changes. These school projects include:
-                        Flappy Bird clone (Unity), Twinstick Shooter (Unreal), Scatter Tool (Unreal), Aim Trainer (Unreal), and a few others.
-                    </p>
+                    <p>Here is a short list of games and game related projects I've made or been part of making. The detailed list omits many school projects.</p>
                     <p>These are in a reverse chronological order (=newest at the top).</p>
                     
-                    <button type="button" class="collapsible">Adaptive AI Implementation (thesis 2024-2025)</button>
+                    <button type="button" class="collapsible">
+                        Adaptive AI Implementation (thesis 2024-2025)<br>
+                        <span class="role-badge">AI Programmer</span><span class="role-badge">AI Designer</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="HTML/Adaptive AI Implementation.html">Project report link</a>.</p>
                         <p>My thesis about different AI systems and how to implement adaptive learning ability to a realtime game environment.</p>
                     </div>
 
-                    <button type="button" class="collapsible">Woods of the Dark Arts (roguelite 2024-2025)</button>
+                    <button type="button" class="collapsible">
+                        Woods of the Dark Arts (roguelite 2024-2025)<br>
+                        <span class="role-badge">Team Lead</span><span class="role-badge">Gameplay Programmer</span><span class="role-badge">AI Programmer</span><span class="role-badge">Designer</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="HTML/WoDA.html">Project report link</a>.</p>
-                        <p>WoDA is a roguelite game where I led a team of around 10 students while also being one of the programmers and lead designer at the start.</p>
+                        <p>WoDA is a roguelite game where I led a team of around 10 students while also being one of the "senior" programmers and lead designer at the start.</p>
                     </div>
 
-                    <button type="button" class="collapsible">MechSuit (VR/haptics mech game 2023)</button>
+                    <button type="button" class="collapsible">
+                        MechSuit (VR/haptics mech game 2023)<br>
+                        <span class="role-badge">Team Lead</span><span class="role-badge">Programmer</span><span class="role-badge">Technical Artist</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="HTML/MechSuit.html">Project report link</a>.</p>
-                        <p>MechSuit is a VR game that allows use of a haptic suit to help with the game immersion. In the project I was the team lead, only programmer, and a technical artist.</p>
+                        <p>MechSuit is a VR game that allows use of a haptic suit to help with the game immersion.</p>
                     </div>
 
-                    <button type="button" class="collapsible">Norowareta (horror 2022-2024)</button>
+                    <button type="button" class="collapsible">
+                        Norowareta (horror 2022-2024)<br>
+                        <span class="role-badge">Programmer</span><span class="role-badge">Level Designer</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="HTML/Norowareta.html">Project report link</a>.</p>
                         <p><a href="https://store.steampowered.com/app/2964800/Norowareta_The_Three_Treasures/">Steam link to the game</a>.</p>
@@ -148,13 +165,21 @@
                         <p><a href="https://youtu.be/WXkqLqQw0O4">Direct link</a></p>
                     </div>
 
-                    <button type="button" class="collapsible">Godllergy (jam game 2023)</button>
+                    <h3>Smaller projects:</h3>
+
+                    <button type="button" class="collapsible">
+                        Godllergy (jam game 2023)<br>
+                        <span class="role-badge">Programmer</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="HTML/Godllergy.html">Project report link</a>.</p>
                         <p>Godllergy is an unfinished game we created in an in-house game jam in 2023. The base idea was to play a god intern, who is tasked to create life, but unbeknownst to the "boss god", the intern is allergic to living creatures.</p>
                     </div>
 
-                    <button type="button" class="collapsible">Mirror World (RPG 2022)</button>
+                    <button type="button" class="collapsible">
+                        Mirror World (RPG 2022)<br>
+                        <span class="role-badge">Lead Designer</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="HTML/Mirror World.html">Project report link</a>.</p>
                         <p>Mirror World is an unfinished game our group started as a school assignment spring 2022. It unfortunately got abandoned, when people got enough project hours from it. I was still interested, but I would've needed new artists. I was both a programmer and shared the lead desigener roll for the game.</p>
@@ -162,7 +187,10 @@
                         <iframe width=95% height="400px" src="https://www.youtube.com/embed/cONdMBVcRTI"></iframe>
                     </div>
 
-                    <button type="button" class="collapsible">Organ Orbit (jam game 2022)</button>
+                    <button type="button" class="collapsible">
+                        Organ Orbit (jam game 2022)<br>
+                        <span class="role-badge">Programmer</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="HTML/Organ Orbit.html">Project report link</a>.</p>
                         <p>Organ Orbit is a game made for Xamk Game Jam 2022. We had a team of six programmers of whom only three of us worked as programmers in this project.</p>
@@ -171,7 +199,10 @@
                         <p>Game downloadable on itch.io - <a href="https://nitenhaku.itch.io/organ-orbit-xgj2022">link to game page.</a></p>
                     </div>
 
-                    <button type="button" class="collapsible">From Life and Darkness (jam game 2022)</button>
+                    <button type="button" class="collapsible">
+                        From Life and Darkness (jam game 2022)<br>
+                        <span class="role-badge">Solo Developer</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="HTML/From Life and Darkness.html">Project report link</a>.</p>
                         <p>From Life and Darkness was made at Finnish Game Jam 2022. I made the game solo apart from the art and music, which are all from Unity Asset Store.</p>
@@ -180,7 +211,10 @@
                         <!--https://portfolio.xamk.fi/view/view.php?id=73671-->
                     </div>
 
-                    <button type="button" class="collapsible">Color Blind (jam game 2021)</button>
+                    <button type="button" class="collapsible">
+                        Color Blind (jam game 2021)<br>
+                        <span class="role-badge">Lead Designer</span>
+                    </button>
                     <div class="collapsecontent">
                         <p><a href="https://portfolio.xamk.fi/view/view.php?id=73654">Project report link</a>.</p>
                         <p>Color Blind was made at Xamk Game Jam 2021 II. I was the lead designer for the game.</p>
@@ -192,6 +226,9 @@
                         <p><a href="HTML/RandomProjects.html">Random projects link</a>.</p>
                         <p>This is dedicated to things I have done purely to learn or test something new. I think there are plenty of really cool stuff here so don't hesitate to look them over.</p>
                     </div>
+
+
+                    <br><br>
 
 
                     <h1>Tabletop RPG Rule & World Design</h1>
@@ -238,6 +275,10 @@
                         <p>Third World is a relatively standard fantasy rpg set in a world where two groups of gods had been exiled after their attempted rebellion against the greater gods.</p>
                         <p>None of the original design documents have survived the test of time. The rulesets were clunky, but functional. The document for the world desing was around 40-50 pages long.</p>
                     </div>
+
+
+                    <br><br>
+
 
                     <h1>Drawings</h1>
                     <p>These are some snippets of my drawings over the years. I don't claim to be an artist, but I think I can manage some conceptual art to a point, if need arises.</p>
@@ -289,6 +330,9 @@
                     </div>
 
 
+                    <br><br>
+
+
                     <h1>Writings</h1>
                     <p>I have a few written short stories, which I can share in person. They do not, however, exist in public form as of yet and will not until I have figured out which ones I might wish to publish.</p>
 
@@ -305,9 +349,10 @@
             <div id="Contact" class="tabcontent">
                 <div class="mainInfo">
                     <h2>My contact info</h2>
-                    <p>My name is Toni "Fera" Tiilikainen. My current whereabouts is presumably Kotka, Finland.</p>
-                    <p>You may send me an email to the address below and I will return to you at my earliest convenience.</p>
-                    <p>tztiilik@gmail.com</p>
+                    <p><b>Name:</b> Toni Tiilikainen.</p>
+                    <p><b>Current location:</b> Kotka, Finland.</p>
+                    <p><b>Email:</b> tztiilik@gmail.com</p>
+                    <p><b>LinkedIn:</b> <a href="www.linkedin.com/in/toni-petri-tiilikainen">Profile link</a></p>
                     <br><br>
 
                     <!--A form.-->
@@ -330,16 +375,30 @@
                         <input type="submit" value="Submit">
                     </form>--> 
 
-                    <br><br><br>
-                    <p>I am not in this picture.</p>
-                    <p><img src="IMG/Pesari&Punari.jpg" id="pehmot"></p>
+                    <br><br>
+
+                    <div id="pehmot">
+                        <p>Not as scary in real life,<br>though I do like wearing quality clothes casually.</p>
+                        
+                        <img src="IMG/Toni_Tiilikainen.jpg" alt="My picture, which refused to load for whatever reason.">
+                    </div>
+
                 </div>
                 <div class="extraSide">
                     <!--Extra stuff on the side if need be.-->
                     <h3>Jump:</h3>
                 </div>
             </div>
-
+            
+            <div id="Resume" class="tabcontent">
+                <div class="mainInfo">
+                    <h2>Resume Preview</h2>
+                    <p>Click image for the PDF</p>
+                    <a href="HTML/Resume.pdf" target="_blank">
+                        <img src="IMG/MyResume.jpg" alt="Resume preview" style="width:100%; max-width:800px;">
+                    </a>
+                </div>
+            </div>
 
             <div id="footerData">
                 <!--Whatever useless extra info is at the bottom of a website.-->

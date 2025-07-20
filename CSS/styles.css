@@ -21,7 +21,7 @@ html, body{
     height: 10%;
     width: 100%;
     /*background-color: #000000;*/
-    color: #ffffff;
+    color: #f0f0f0;
     border: 5px #9B1D3B;
     cursor: pointer;
 }
@@ -40,7 +40,7 @@ html, body{
 }
 
 .tablinks{
-    width: 33.3%;
+    width: 25%;
     text-align: center;
     box-sizing: border-box;
     border: 5px solid #9B1D3B;
@@ -57,7 +57,8 @@ html, body{
     margin: .5%;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: #ffffff;
+    padding-bottom: 5px;
+    background-color: #f0f0f0;
     border-radius: 10px;
 }
 
@@ -73,10 +74,13 @@ html, body{
     border: 5px solid #000000;
 }
 
-#pehmot{
-    float:left;
-    width: 100%;
-    border: none;
+#pehmot {
+    text-align: center;
+}
+#pehmot img {
+    max-width: 50%;
+    border-radius: 10px;
+    border: 5px solid #000000;
 }
 
 #skillsSection{
@@ -102,12 +106,12 @@ html, body{
 
  /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: #eee;
+    background-color: #ddd;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 16px;
     width: 100%;
-    border: none;
+    border: 2px solid #f0f0f0;
     text-align: left;
     outline: none;
     font-size: 20px;
@@ -125,6 +129,15 @@ html, body{
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+}
+
+.role-badge {
+    background-color: #9B1D3B;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
 }
 
 .artpics{
