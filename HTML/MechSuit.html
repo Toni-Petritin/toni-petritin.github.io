@@ -42,51 +42,47 @@
                     <p><b>Design:</b> The original idea was mine. Meri did most of the art design and I did the gameplay & technical design. Otherwise the design process was a team effort.</p>
                     <p>The design focus early on was in environmental effects. Yet, after the first public playtesting there were a lot of people, who wanted a more combat oriented approach. This changed our focus in the second half of the project to creating enemies and creating more varried mech weaponry.</p>
                     <p><b>Achieved:</b> All initial requirements set out by the client were met. The goals placed by our own team were met partially as we set a relatively high bar for ourselves. We had to cut underwater content and story content.</p>
-                    <p><b>Future:</b> The project is ongoing in terms of each team member wanting to continue with it. The problem is each member has been busy with school.</p>
+                    <p><b>Future:</b> The project achieved the goals set out for it. However, I think the concept is good enough to justify a proper commercial game.</p>
                     <p><b>Schedule:</b> The timeframe set out by the client for the project was around three and a half months.</p>
 
 
                     <h2>2. My Tasks</h2>
-                    <p><b>Scheduling:</b> </p>
-                    <p><b>Mentoring:</b> </p>
-                    <p><b>VR controls:</b> </p>
-                    <p><b>Mech controls:</b> </p>
-                    <p><b>Haptics:</b> </p>
-                    <p><b>Continuous movement:</b> </p>
-                    <p><b>Technical artist:</b> </p>
-                    <p><b>Particle effects:</b> </p>
-                    <p><b>AI:</b> State machine and without.</p>
-                    <p><b>Missile guidance:</b> </p>
-                    <p><b>Physics joints:</b> </p>
-                    <p><b>Camera shake:</b> </p>
-                    <p><b>UI programming:</b> </p>
-                    <p><b>Camera manipulation:</b> </p>
-                    <p><b>Day/Night cycle:</b> </p>
-                    <p><b>Shaders:</b> </p>
+                    <p><b>Team leading:</b> The two other team members had no prior experience in game production and design. This made the leadership role relatively simple, though it required me to divert a substantial amount of time to mentor the rest of the team.</p>
+                    <p><b>VR controls:</b> Programming and designing the controls was mostly straightforward. There were some issues with how the XR controls are defined in Unity and required some re-programming.</p>
+                    <p><b>Mech controls:</b> The mech's controls were interactions through in-game controls inside the mech's cockpit. Creating these controls was an extensive task, but really cool and fun work.</p>
+                    <p><b>Haptics:</b> Interacting with the haptic suit interface was straightforward. The provided interface was also relatively limited and difficult to go around for finer controls. I abandoned the attempts of finer controls after few days of research into how complex it would have ended up being.</p>
+                    <p><b>Continuous movement:</b> Usually, you want to avoid continuous movement in VR because it induces motion sickness. A large portion of my design and programming went into helping mitigate or even negate this motion sickness. Based on the feedback from the testers this was an almost complete success.</p>
+                    <p><b>Technical artist:</b> As this was the first game project for both of the artists, I had to give a lot of instructions throughout the project. This included a lot of time spent on understanding how the different tools and programs of the artists worked so I could give easy to understand instructions.</p>
+                    <p><b>Particle effects:</b> This was my first time making particle effects with Unity (I have programmed my own particle effect system using C++, but it is nowhere near as complex).</p>
+                    <p><b>AI:</b> I used HFSM (Hierarchical Finite State Machine) to create the more complex AI enemies. For the simpler ones I used a simple rules based system. This clear distinction between the two was the moment I realized how important it is to use the right AI architecture to model a behavior.</p>
+                    <p><b>Missile guidance:</b> The mech has eye-controller (= VR facing) missile targeting. The missiles use physics interaction to attempt to avoid obstacles and home in on its target. This was a really fun to task, and the organic homing of the missiles is still a thing I want to explore in a larger and a more fine-tuned scale.</p>
+                    <p><b>Physics joints:</b> These used up a lot of my time. Unity's physics joints are great for some things, but they also lack some very "physics-like" behaviors, which often require some re-programming.</p>
+                    <p><b>Camera shake:</b> This is something you'd expect to make motion sickness worse in VR. However, in this case, the opposite is true. The camera shake allows the brain to disassosiate your lack of movement from the mech's movement, and surprisingly seemed to significantly reduced motion sickness.</p>
+                    <p><b>UI programming:</b> The mech UI was a very complex and multifaceted task. Both the design and programming took a lot of time. I think it was still worth it as it was one of the most important elements of the game experience.</p>
+                    <p><b>Day/Night cycle:</b> Unity is really bad at this if you want realism. Programming this and other weather effects turned out to be a lot bigger undertaking than I had originally thought.</p>
+                    <p><b>Shaders:</b> I programmed some simple shaders to help with the weather and weapon effects.</p>
 
-
-                    <h2>3. Problems and Solutions</h2>
-                    <p><b><!--Problem name:--></b> <!--problem description.--></p>
-                    
-
-                    <h2>4. Testing</h2>
-                    <p><!--Whatever notes on testing there are.--></p>
+                    <h2>3. Testing</h2>
+                    <p>Most of the testing was ad hoc as the game production was on such a tight schedule.</p>
+                    <p>In addition to the limited internal testing, the game had three public testing days, where university students from different fields could try out the game and give feedback. This feedback was instrumental in guiding the direction of the game as it was being developed.</p>
                     <!--Should include bug reports and testing documents, if those are available.-->
 
 
-                    <h2>5. Screenshots</h2>
-                    <p><b>Picture 1.</b> <!--screenshot description--></p>
-                    <p><img src="../IMG/Screen shot 1.png" class="pics"></p> <!--This is an example link-->
+                    <h2>4. Screenshots</h2>
+                    <p><b>Picture 1.</b> Mech cockpit as seen in the editor.</p>
+                    <p><img src="../IMG/MechSuit/EditorSS.png" class="pics"></p>
+                    <p><b>Picture 2.</b> Editor view of the test scene.</p>
+                    <p><img src="../IMG/MechSuit/TestSceneSS.png" class="pics"></p>
                     
 
-                    <h2>6. Gameplay Video</h2>
+                    <h2>5. Gameplay Video</h2>
                     <p>A simple gameplay video showing some of the game's mechanics. As it is a VR game, the video is only a portion of what the player actually sees while playing with the VR goggles.</p>
                     <iframe width=95% height="400px" src="https://www.youtube.com/embed/N9pkVx7a5oE"></iframe>
                     <p><a href="https://youtu.be/N9pkVx7a5oE">Direct link</a></p>
 
 
-                    <h2>7. Conclusions</h2>
-                    <p><!--Whatever conclusions I came to and what did I learn.--></p>
+                    <h2>6. Conclusions</h2>
+                    <p>This project taught me a massive amount about soft skills in game development. Not just how to use them but how important they are. It also reignited my interest in AI development.</p>
                     <br><br>
                 </div>
             </div>

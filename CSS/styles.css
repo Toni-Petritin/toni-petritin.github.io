@@ -147,8 +147,39 @@ html, body{
     background-color: #f1f1f1;
 }
 
-.role-badge {
+.tech-badge {
+    display: inline-block;
     background-color: #9B1D3B;
+    color: #fff;
+    padding: 3px 9px;
+    margin: 4px 8px 4px 0; 
+    border-radius: 12px;
+    font-size: 1.0em;
+}
+
+.soft-badge {
+    display: inline-block;
+    background-color: #D67E2F;
+    color: #fff;
+    padding: 3px 9px;
+    margin: 4px 8px 4px 0; 
+    border-radius: 12px;
+    font-size: 1.0em;
+}
+
+.role-badge {
+    display: inline-block;
+    background-color: #9B1D3B;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+}
+
+.softrole-badge {
+    display: inline-block;
+    background-color: #D67E2F;
     color: #fff;
     padding: 2px 8px;
     margin-left: 10px;
